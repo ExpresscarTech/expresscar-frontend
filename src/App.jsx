@@ -10,6 +10,8 @@ import AnexosOR     from "./pages/AnexosOR";
 import Compras      from "./pages/Compras";  
 import Contas       from "./pages/Contas"; 
 import LogAcoes     from "./pages/LogAcoes";
+import Artigos      from "./pages/Artigos";
+import NovaOrdem    from "./pages/NovaOrdem";
 
 export default function App() {
   return (
@@ -25,10 +27,12 @@ export default function App() {
         {/* novos módulos */}
         <Route path="/compras"     element={<Compras   />} />
         <Route path="/contas"      element={<Contas    />} />
-        <Route path="/marcacoes" element={<Marcacoes />} />
-        <Route path="/anexos"    element={<AnexosOR  />} />
-        <Route path="/contas" element={<Contas   />} />
-        <Route path="/logs"   element={<LogAcoes />} />
+        <Route path="/marcacoes"   element={<Marcacoes />} />
+        <Route path="/anexos"      element={<AnexosOR  />} />
+        <Route path="/contas"      element={<Contas   />} />
+        <Route path="/logs"        element={<LogAcoes />} />
+        <Route path="/artigos"     element={<Artigos />} />
+        <Route path="/nova-ordem"  element={<NovaOrdem />} />
 
         {/* 404 fallback opcional */}
         <Route path="*" element={<h1 className="p-6">Página não encontrada</h1>} />

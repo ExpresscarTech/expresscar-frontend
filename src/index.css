@@ -1,7 +1,3 @@
-/* Tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Qualquer estilo extra global pode vir aqui */
-body { @apply text-slate-800; }
